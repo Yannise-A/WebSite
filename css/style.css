@@ -1,0 +1,21 @@
+html
+{
+	scroll-behavior: smooth;
+	cursor: none;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: black;
+	overflow-x: hidden;
+	cursor: none;
+}
+
+h1
+{
+	text-align: center;
+	color: white;
+}
