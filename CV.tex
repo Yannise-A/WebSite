@@ -1,0 +1,159 @@
+\documentclass{article}
+
+% en-tête (déclaration de packages, configuration, etc)
+
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+\usepackage{nameref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\author{Nom de l'auteur}
+\title{Titre du document}
+\date{Date de rédaction}
+
+\begin{document}
+\maketitle
+
+% contenu du document
+
+\tableofcontents
+
+\section{Mises en forme simples}
+\label{sec:mise-en-forme}
+
+{\Huge Huge}
+
+{\huge huge}
+
+{\LARGE LARGE}
+
+{\Large Large}
+
+{\large large}
+
+{\small small}
+
+{\footnotesize footnotesize}
+
+{\scriptsize scriptsize}
+
+{\tiny tiny}
+
+\textbf{Texte en gras}
+
+\textit{Texte en italique}
+
+\texttt{Texte en monospace}
+
+\textsf{Texte en sans sérif}
+
+\textsc{Texte en petites majuscules}
+
+\underline{Texte souligné}
+
+\colorbox{red!50!yellow}{
+  \textcolor{white}{\textbf{gras blanc surligné en orange}}
+}
+
+\begin{minipage}{5cm}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus diam, rhoncus id sodales sed, accumsan nec orci. Praesent justo dui, sodales vel urna eget, vehicula elementum eros. Mauris quis condimentum augue, at rhoncus leo. Donec euismod, tellus quis finibus imperdiet, nisi quam feugiat felis, eget ultrices sapien nibh ut mi. Mauris eleifend felis nec enim efficitur, vel ornare velit posuere. Nulla nulla eros, convallis quis erat ullamcorper, hendrerit laoreet urna. Suspendisse potenti. Nullam at nibh quis erat efficitur dapibus.
+
+ Fusce vulputate tellus eu velit fermentum efficitur. Curabitur sit amet urna vestibulum tellus fermentum aliquam. Proin non
+\end{minipage}
+\hspace{0cm}
+\begin{minipage}{15cm}
+  un autre truc ici lalalala
+\end{minipage}
+
+Dans un paragraphe un \emph{mot important} et si on
+\textit{est dans de l'italique et qu'on a quand même un
+\emph{mot important} alors il ressort de toutes façons}.
+
+\section{Une autre section}
+
+Avec des liens :
+
+\url{https://pablo.rauzy.name/}
+
+\href{https://pablo.rauzy.name/}{Pablo Rauzy}
+
+\subsection{Avec une sous-section}
+
+Des trucs dedans.
+
+\subsubsection{Et une sous-sous-section}
+
+Qui dit aussi des choses.
+
+\paragraph{Un paragraphe.}
+C'est un ensemble de phrases liées sémantiquement et par la présentation du texte.
+
+\subsubsection{Une autre sous-sous-section}
+
+Avec encore des choses dedans.
+
+\subsection{Et un autre sous-section}
+
+Qui dit sûrement des choses aussi\footnote{Enfin, admettons.}…
+
+\section{Une troisième section}
+
+Remettons du \textbf{gras} comme on l'a vu dans la section
+\ref{sec:mise-en-forme} intitulée ``\nameref{sec:mise-en-forme}''
+à la page \pageref{sec:mise-en-forme}.
+
+\begin{itemize}
+\item Une liste à puce.
+\item Tout à fait standard\footnote{Pour une certaine définition du mot ``standard'', du moins.}.
+\end{itemize}
+
+\subsection{Sous-section de la 3ème section}
+
+\begin{enumerate}
+\item Une liste numéroté.
+\item Un second élément.
+\item \label{chose} Un troisième.
+\end{enumerate}
+
+Dans la liste précédente, l'élément \ref{chose} est important parce que gloubiboulga, voir la figure~\ref{fig:p8}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=5cm,angle=10]{p8.pdf}
+  \caption{Le logo de Paris 8 incliné de 10$^o$. \label{fig:p8}}
+\end{figure}
+
+\section{Des maths}
+On peut mettre des maths directement au milieu d'une phrase
+$(a+b)^2 = a^2 + 2ab + b^2$ mais il est aussi possible de séparer
+les formules un peu plus imposantes du texte en les mettant sur
+leur propre ligne comme ça :
+\[
+  \sqrt{|xy|}\leq\sqrt{\left|\frac{x+y}{2}\right|}
+\]
+ou encore ça :
+\[
+  \alpha = \sum_{i=0}^{i=n} \alpha_i \cdot 2^i
+\]
+
+\section{Code !}
+
+\begin{lstlisting}[language=python]
+  import foo
+  if True:
+    do_something()
+  print("coucou")
+\end{lstlisting}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
