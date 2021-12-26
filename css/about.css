@@ -59,7 +59,7 @@ ul.horizontal li {
   float: left;
 }
 ul.horizontal li a.active {
-  background-color: #ffffff;
+  background-color: #550202;
 }
 ul.horizontal li a {
   display: inline-block;
