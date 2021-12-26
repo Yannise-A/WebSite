@@ -80,6 +80,7 @@ li a:hover {
 .project.on_right
 {
   left: 100%;
+  margin-left: 180%;
 	transform: translate(-100%, -50%);
 }
 
@@ -253,7 +254,7 @@ li a:hover {
 	z-index: 6;
 	top: 78%;
 	height: 15%;
-	fill: #4584b6;
+	fill: #ffffff;
 	font-family: 'Inter', sans-serif;
   font-weight: 700;
 	font-size: 0.8em;
