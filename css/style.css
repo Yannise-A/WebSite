@@ -69,7 +69,7 @@ ul.horizontal li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-ul.horizontal li a.active {
+.active {
   background-color: #550202;
 }
 
