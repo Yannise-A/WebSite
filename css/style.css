@@ -7,7 +7,7 @@ body{
 	line-height: 1.7;
 	color: #ececee;
 	background-color: #1f2029;
-	overflow: hidden;
+	overflow: scroll;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
@@ -16,18 +16,19 @@ body{
   width: 100%;
 }
 .center{
-  position: absolute;
-  top: 50%;
+  position: static;
+  top: 10%;
   left: 0;
   display: block;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 2em;
   z-index: 6;
   text-align: center;
   transform: translateY(-50%);
 }
 h1{
+  margin: 10% 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 7vw;
@@ -35,9 +36,7 @@ h1{
   color: #e54747;
   text-align: center;
   -webkit-text-stroke: 2px #e54747;
-  text-stroke: 2px #e54747;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   color: transparent;
 }
 
@@ -46,31 +45,37 @@ h1{
   position: absolute;
   left: -9999px;
 }
-ul.horizontal {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(223, 83, 83);
+  background-color: rgb(146, 49, 49);
+  position: sticky;
+  top: 0;
 }
-ul.horizontal li:hover {
-  background-color: rgb(141, 53, 53);
-}
-ul.horizontal li {
+
+li {
   float: left;
 }
-ul.horizontal li a.active {
-  background-color: #ffffff;
-}
-ul.horizontal li a {
-  display: inline-block;
+
+li a {
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.137);
+}
+
 .active {
-  background-color: #550202;
+  background-color: #3f0e0e;
+}
+.active:hover {
+  pointer-events: none;
 }
 
 
@@ -79,9 +84,7 @@ ul.horizontal li a {
   h1{
     font-size: 9vw;
     -webkit-text-stroke: 2px transparent;
-    text-stroke: 2px transparent;
     -webkit-text-fill-color: #e54747;
-    text-fill-color: #e54747;
     color: #e54747;
   }
 }
