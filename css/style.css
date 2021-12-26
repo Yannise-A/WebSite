@@ -52,7 +52,7 @@ li a:hover {
   pointer-events: none;
 }
 
-#content
+.content
 {
   width: 50%;
 	overflow-anchor: none;
