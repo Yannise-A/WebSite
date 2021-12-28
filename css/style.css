@@ -78,13 +78,6 @@ li a:hover {
 	margin: 2em;
 }
 
-.project.on_right
-{
-	left: 100%;
-	margin-left: 100%;
-	transform: translate(-100%, -50%);
-}
-
 .video_div
 {
 	position: absolute;
@@ -98,12 +91,6 @@ li a:hover {
 .on_left .video_div
 {
 	left: 0%;
-}
-
-.on_right .video_div
-{
-	transform: translate(-100%, 0%);
-	left: 100%;
 }
 
 .html_video
@@ -137,11 +124,6 @@ li a:hover {
 	transform: translate(0%, -60%);
 }
 
-.on_right .project_title
-{
-	left: 78.7%;
-	transform: translate(-100%, -60%);
-}
 
 .project_date
 {
@@ -168,13 +150,6 @@ li a:hover {
 	left: 15%;
 	transform: translate(0%, 0%);
 }
-
-.on_right .text_box
-{
-	left: 85%;
-	transform: translate(-100%, 0%);
-}
-
 .text_box .text
 {
 	position: absolute;
@@ -193,13 +168,6 @@ li a:hover {
 	left: 22%;
 	text-anchor: start;
 }
-
-.on_right .text_box .text
-{
-	left: 3.2%;
-	text-anchor: end;
-}
-
 .text_box .tag
 {
 	position: absolute;
@@ -220,11 +188,6 @@ li a:hover {
 .on_left .text_box .tag
 {
 	transform: translate(0%, 0%);
-}
-
-.on_right .text_box .tag
-{
-	transform: translate(-100%, 0%);
 }
 
 
