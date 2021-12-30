@@ -40,9 +40,11 @@ ul {
 	background-color: rgb(146, 49, 49);
 	z-index: 1000;
 	overflow: hidden;
+	user-select: none;
   }
 li {
 	float: left;
+	user-select: none;
 }
 
 li a {
